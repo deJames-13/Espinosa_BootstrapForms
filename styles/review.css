@@ -1,0 +1,47 @@
+
+.review-section {
+    background-color: #4267B2;
+    padding: 50px 0;
+    color: white;
+  }
+
+  .review-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .star-rating {
+    font-size: 24px;
+    color: #FFD700;
+  }
+
+  .comment-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .add-comment-btn {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-comment-btn:hover {
+    background-color: #365899;
+  }
+
+  .powered-by {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }

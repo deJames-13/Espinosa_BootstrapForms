@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tourist Attractions - Explore Experiences</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/review.css">
+
+        <script type="module" src="./scripts/index.js" defer></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Tourist Attractions</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Experiences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="display-3 mb-4">Tours & experiences</h1>
+                <p class="lead mb-5">Explore experiences, beaches, tours and more</p>
+                <div class="search-bar d-flex align-items-center mb-5">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <input type="text" placeholder="Where to?" class="flex-grow-1">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="row destination-cards">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="destination-card">
+                            <img src="https://source.unsplash.com/random/200x200/?bangkok" alt="Beaches">
+                            <h5>Beaches</h5>
+                            <p>500+ activities</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="destination-card">
+                            <img src="https://source.unsplash.com/random/200x200/?seoul" alt="Museums">
+                            <h5>Museums</h5>
+                            <p>500+ activities</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="destination-card">
+                            <img src="https://source.unsplash.com/random/200x200/?taipei" alt="Parks">
+                            <h5>Parks</h5>
+                            <p>300+ activities</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="destination-card">
+                            <img src="https://source.unsplash.com/random/200x200/?hongkong" alt="Islands">
+                            <h5>Islands</h5>
+                            <p>400+ activities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="experiences-section">
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 class="mb-4">Must Visit Places in the Philippines</h2>
+                        <div class="row" id="cards-container">
+
+                        </div>
+                    </div>
+
+                    <!-- Sidebar with form -->
+                    <div class="col-md-4">
+                        <div class="bg-light p-4 shadow-sm rounded">
+                            <h4 class="mb-4">Get in touch with our Travel Expert</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text">+353</span>
+                                        <input type="tel" class="form-control" placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="date" class="form-control" placeholder="Date of Travel" required>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" required>
+                                        <option selected disabled>Traveller Count</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5+</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-orange w-100">SEND ME DETAILS</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="review-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="review-card">
+                            <div class="star-rating text-center mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h2 class="text-center text-dark mb-3">Awesome! We got it.</h2>
+                            <p class="text-center text-muted mb-4">If you have a moment, tell us how it went so we can
+                                keep it up!</p>
+                            <textarea class="comment-box" rows="4"
+                                placeholder="Thank you for your speedy response."></textarea>
+                            <div class="text-center">
+                                <button class="add-comment-btn">Add a comment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="bg-light text-dark mt-5">
+            <div class="container py-4">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>We provide curated travel experiences across the world. Whether you're looking for adventure,
+                            culture, or relaxation, we have something for everyone.</p>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Experiences</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact & Social Media -->
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: info@touristattractions.com</li>
+                            <li>Phone: +123 456 7890</li>
+                            <li>Address: 123 Street, City, Country</li>
+                        </ul>
+                        <div class="social-media mt-3">
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark text-light py-2">
+                <div class="container text-center">
+                    <small>&copy; 2024 Tourist Attractions. All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="inquiryModalLabel">Superb Choice!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="inquiryForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">+63</span>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dateOfTravel" class="form-label">Date of Travel</label>
+                                <input type="date" class="form-control" id="dateOfTravel" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="travellerCount" class="form-label">Traveller Count</label>
+                                <select class="form-select" id="travellerCount" required>
+                                    <option value="" selected disabled>Select number of travellers</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5+">5+</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <label class="form-check-label" for="privacyCheck">
+                                        We assure the privacy of your contact data.
+                                    </label>
+                                </div>
+                                <small>This data will only be used by our team to contact you and no other
+                                    purposes.</small>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Send Me Details</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./scripts/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

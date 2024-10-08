@@ -1,0 +1,42 @@
+body {
+    background-color: #8e44ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .social-login {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px;
+  }
+
+  .social-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form-container {
+    padding: 40px;
+  }
+
+  .login-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-btn {
+    display: flex;
+    gap: 2;
+    align-items: center;
+  }
