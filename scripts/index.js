@@ -6,7 +6,7 @@ const generateCards = () => {
 
     data.forEach(item => {
         const card = `
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 container d-flex justify-content-center">
                 <div class="card">
                     <img src="${item.image}" class="card-img-top" alt="${item.title}">
                     <div class="card-body">
